@@ -88,3 +88,56 @@ double getResponsiveFontSize(
 
   return responsiveSize;
 }
+
+// Additional mobile-specific helpers for exercise views
+double getMobileTitleSize(BuildContext context) {
+  return getResponsiveFontSize(context, fontSize: 24, max: 28);
+}
+
+double getMobileSubtitleSize(BuildContext context) {
+  return getResponsiveFontSize(context, fontSize: 16, max: 18);
+}
+
+double getMobileBodySize(BuildContext context) {
+  return getResponsiveFontSize(context, fontSize: 14, max: 16);
+}
+
+double getMobileCaptionSize(BuildContext context) {
+  return getResponsiveFontSize(context, fontSize: 12, max: 14);
+}
+
+double getMobilePadding(BuildContext context) {
+  return screenWidthFraction(context, dividedBy: 20);
+}
+
+double getMobileCardPadding(BuildContext context) {
+  return screenWidthFraction(context, dividedBy: 25);
+}
+
+double getMobileCardRadius(BuildContext context) {
+  return screenWidthFraction(context, dividedBy: 30);
+}
+
+double getMobileIconSize(BuildContext context) {
+  return screenWidthFraction(context, dividedBy: 15);
+}
+
+double getMobileButtonHeight(BuildContext context) {
+  return screenHeightFraction(context, dividedBy: 15);
+}
+
+double getExerciseCardHeight(BuildContext context) {
+  return screenHeightFraction(context, dividedBy: 3);
+}
+
+double getExerciseImageHeight(BuildContext context) {
+  return screenHeightFraction(context, dividedBy: 4);
+}
+
+double getSetRowHeight(BuildContext context) {
+  return screenHeightFraction(context, dividedBy: 12);
+}
+
+double getProgressIndicatorSize(BuildContext context) {
+  return screenWidthFraction(context, dividedBy: 6);
+}
